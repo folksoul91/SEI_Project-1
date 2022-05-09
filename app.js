@@ -31,7 +31,17 @@ function filterDogBreedList() {
 
 // Need to access the info from the list
 // 1. create a render fn
-// 2. update the h3 tags by navigating the thru the filtered list
+// 2. set filterDogBreedList inside of the render fn and set it to a variable
+// 3. update the h3 tags by navigating the thru the filtered list
 function render() {
+  const dogBreedLists = filterDogBreedList();
   $("#name").text(dogBreedLists[0].name);
+  $("#origin").text(dogBreedLists[0].origin);
+  $("#lifespan").text(dogBreedLists[0].lifespan);
+  $("#weight").text(dogBreedLists[0].weight.metric);
+  $("#height").text(dogBreedLists[0].height.metric);
+  $("#temperament").text(dogBreedLists[0].temperament);
+  $("#dog-image").attr("src", dogBreedLists[0].image.url);
 }
+
+fetchMeData();
