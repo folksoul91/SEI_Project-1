@@ -14,5 +14,9 @@ body {
 }
 
 .title {
+  font-size: 55px;
   font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: #000000;
 }
