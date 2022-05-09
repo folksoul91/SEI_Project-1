@@ -17,7 +17,7 @@ function fetchMeData() {
 }
 
 // Add event listener to the button
-
+document.getElementById("btn").addEventListener("click", render);
 // Need to sort throught the API array within the objects
 // 1. create a fn that filters the array
 // 2. create a condition to match the dogbreed name with the user input values
