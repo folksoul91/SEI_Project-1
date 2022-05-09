@@ -5,7 +5,7 @@ const $input = $("input[type='text']");
 const URL = "https://api.thedogapi.com/v1/breeds";
 
 // Connect the API using ajax/jquery
-function fetMeData() {
+function fetchMeData() {
   $.ajax(URL).then(
     function (data) {
       dogBreedList = data;
@@ -27,4 +27,11 @@ function filterDogBreedList() {
     (dogBreed) => dogBreed.name === $input.val()
   );
   return filteredBreeds;
+}
+
+// Need to access the info from the list
+// 1. create a render fn
+// 2. update the h3 tags by navigating the thru the filtered list
+function render() {
+  $("#name").text(dogBreedLists[0].name);
 }
