@@ -4,11 +4,22 @@ A simple web application that you can search dog breeds by its name using the do
 
 ## Table of Contents
 
+- [Description](#Description)
 - [User Story](#user-story)
 - [Getting Started](#getting-started)
 - [Technologies](#technologies)
 - [API](#API)
 - [Credits](#credits)
+
+## Description
+
+---
+
+Looking to find your "fur"ever best friend?
+
+Deployed Website:
+
+![alt text](./Image/README%20Screenshot.png)
 
 ## User Story
 
@@ -19,3 +30,31 @@ When looking to adopt/purchase your life long doggy friend it can be difficult. 
 ## Getting Started
 
 ---
+
+In order to obtain the maximum search results, you must type in the exact name of dog species. For example, in the search box type in "soft coated wheaten terrier".
+
+## Technologies
+
+---
+
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- Github
+- Figma
+- Trello
+- Notability
+- Google Fonts
+
+## API
+
+---
+
+DOG API: https://api.thedogapi.com/v1/breeds
+
+## Credits
+
+---
+
+Dane Kim
