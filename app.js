@@ -23,9 +23,11 @@ document.getElementById("btn").addEventListener("click", render);
 // 2. create a condition to match the dogbreed name with the user input values
 // 3. set it to a variable and return it so you can use it somewhere else
 function filterDogBreedList() {
-  let filteredBreeds = dogBreedList.filter(
-    (dogBreed) => dogBreed.name === $input.val()
-  );
+  let filteredBreeds = dogBreedList.filter((dogBreed) => {
+    return (
+      dogBreed.name.toLowerCase().indexOf($input.val().toLowerCase()) !== -1
+    );
+  });
   return filteredBreeds;
 }
 
@@ -38,8 +40,8 @@ function render() {
   $("#name").text(dogBreedLists[0].name);
   $("#origin").text(dogBreedLists[0].origin);
   $("#lifespan").text(dogBreedLists[0].lifespan);
-  $("#weight").text(dogBreedLists[0].weight.metric);
-  $("#height").text(dogBreedLists[0].height.metric);
+  $("#weight").text(dogBreedLists[0].weight.metric + " cm");
+  $("#height").text(dogBreedLists[0].height.metric + " kg");
   $("#temperament").text(dogBreedLists[0].temperament);
   $("#dog-image").attr("src", dogBreedLists[0].image.url);
 }
