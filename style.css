@@ -16,7 +16,7 @@ body {
 .title {
   margin-bottom: 0;
   font-size: 55px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 800;
   color: #000000;
@@ -70,12 +70,17 @@ img {
 }
 
 h3 {
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
+main {
+  margin-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
 ::placeholder {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   color: #acacac;
-  font-size: 18px;
+  font-size: 20px;
 }
