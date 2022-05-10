@@ -28,18 +28,51 @@ body {
   align-items: center;
 }
 #input-form {
-  width: 850px;
-  height: 40px;
+  width: 840px;
+  height: 52px;
   background: #fff;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
 }
 #btn {
   width: 132px;
-  height: 40px;
+  height: 52px;
   background: linear-gradient(90deg, #9ebd69 0%, #00c0cc 100%);
   border-radius: 4px;
   color: #fff;
   border: none;
   font-size: 16px;
+}
+.parent-div {
+  display: flex;
+}
+.child-1 {
+  display: flex;
+  width: 566px;
+  height: 583px;
+  margin-right: 18px;
+}
+.child-2 {
+  width: 394px;
+  height: 583px;
+  background-color: #fff;
+}
+.master-container {
+  max-width: 978px;
+  min-width: 978px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  line-height: 1.8;
+}
+
+::placeholder {
+  color: blue;
 }
