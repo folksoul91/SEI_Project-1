@@ -39,7 +39,7 @@ function render() {
   const dogBreedLists = filterDogBreedList();
   $("#name").text(dogBreedLists[0].name);
   $("#origin").text(dogBreedLists[0].origin);
-  $("#lifespan").text(dogBreedLists[0].lifespan);
+  $("#lifespan").text(dogBreedLists[0].life_span);
   $("#weight").text(dogBreedLists[0].weight.metric + " cm");
   $("#height").text(dogBreedLists[0].height.metric + " kg");
   $("#temperament").text(dogBreedLists[0].temperament);
