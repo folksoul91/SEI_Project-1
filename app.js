@@ -17,7 +17,13 @@ function fetchMeData() {
 }
 
 // Add event listener to the button
-document.getElementById("btn").addEventListener("click", render);
+$("#btn").on("click", render);
+$("#btn").keypress(function (evt) {
+  let keycode = evt.keycode ? evt.keycode : evt.key;
+  if (keycode == "Enter") render;
+});
+// document.getElementById("btn").addEventListener("click", render);
+
 // Need to sort throught the API array within the objects
 // 1. create a fn that filters the array
 // 2. create a condition to match the dogbreed name with the user input values
@@ -38,7 +44,7 @@ function filterDogBreedList() {
 function render() {
   const dogBreedLists = filterDogBreedList();
   $("#name").text(dogBreedLists[0].name);
-  $("#origin").text(dogBreedLists[0].origin);
+  $("#bred").text(dogBreedLists[0].bred_for);
   $("#lifespan").text(dogBreedLists[0].life_span);
   $("#weight").text(dogBreedLists[0].weight.metric + " cm");
   $("#height").text(dogBreedLists[0].height.metric + " kg");
