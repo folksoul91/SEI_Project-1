@@ -70,17 +70,29 @@ img {
 }
 
 h3 {
-  line-height: 1.45;
+  line-height: 0.85;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px;
 }
 
 main {
-  margin-left: 15px;
+  margin-left: 25px;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
 }
 ::placeholder {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   color: #acacac;
   font-size: 20px;
+}
+
+.name,
+.bred,
+.lifespan,
+.weight,
+.height,
+.temperament {
+  font-size: 15px;
+  font-weight: 400;
 }
