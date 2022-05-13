@@ -17,7 +17,7 @@ A simple web application that you can search dog breeds by its name using the do
 
 Looking to find your "fur"ever best friend?
 
-Deployed Website:
+Deployed Website: https://folksoul91.github.io/SEI_Project-1/
 
 ![alt text](./Image/README%20Screenshot.png)
 
