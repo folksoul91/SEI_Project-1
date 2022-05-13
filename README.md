@@ -9,7 +9,7 @@ A simple web application that you can search dog breeds by its name using the do
 - [Getting Started](#getting-started)
 - [Technologies](#technologies)
 - [API](#API)
-- [Credits](#credits)
+- [Future Improvements](#future-improvements)
 
 ## Description
 
@@ -53,8 +53,12 @@ In order to obtain the maximum search results, you must type in the exact name o
 
 DOG API: https://api.thedogapi.com/v1/breeds
 
-## Credits
+## Future Improvements
 
 ---
 
-Dane Kim
+For future improvements I will include...
+
+-- Breeds of cats API to search for different types of cats
+-- Breeds of birds API to search for different types of birds
+-- Videos of animals instead of pictures
