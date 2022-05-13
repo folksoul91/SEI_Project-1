@@ -19,7 +19,7 @@ Looking to find your "fur"ever best friend?
 
 Deployed Website: https://folksoul91.github.io/SEI_Project-1/
 
-![alt text](./Image/README%20Screenshot.png)
+![alt text](./Image/Screen%20Shot%202022-05-12%20at%2010.16.39%20PM.png)
 
 ## User Story
 
