@@ -59,6 +59,6 @@ DOG API: https://api.thedogapi.com/v1/breeds
 
 For future improvements I will include...
 
--- Breeds of cats API to search for different types of cats
--- Breeds of birds API to search for different types of birds
--- Videos of animals instead of pictures
+- Breeds of cats API to search for different types of cats
+- Breeds of birds API to search for different types of birds
+- Videos of animals instead of pictures
