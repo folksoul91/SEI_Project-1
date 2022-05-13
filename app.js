@@ -46,8 +46,8 @@ function render() {
   $("#name").text(dogBreedLists[0].name);
   $("#bred").text(dogBreedLists[0].bred_for);
   $("#lifespan").text(dogBreedLists[0].life_span);
-  $("#weight").text(dogBreedLists[0].weight.metric);
-  $("#height").text(dogBreedLists[0].height.metric);
+  $("#weight").text(dogBreedLists[0].weight.metric + " cm");
+  $("#height").text(dogBreedLists[0].height.metric + " kg");
   $("#temperament").text(dogBreedLists[0].temperament);
   $("#dog-image").attr("src", dogBreedLists[0].image.url);
 }
