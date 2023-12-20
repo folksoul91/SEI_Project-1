@@ -42,7 +42,7 @@ function filterDogBreedList() {
 async function fetchImageURL(imageId) {
   try {
     const imageData = await $.ajax({
-      url: `api.thedogapi.com/v1/images/${imageId}`,
+      url: `https://api.thedogapi.com/v1/images/${imageId}`,
       method: "GET",
     });
     return imageData.url;
