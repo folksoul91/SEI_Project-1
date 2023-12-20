@@ -5,7 +5,6 @@ var dogBreedList;
 var activeDogBreed;
 
 function fetchMeData() {
-  // evt.preventDefault();
   $.ajax((URL = "https://api.thedogapi.com/v1/breeds")).then(
     function (data) {
       dogBreedList = data;
@@ -15,13 +14,13 @@ function fetchMeData() {
     }
   );
 }
+
 // Event Listener - click button
 $("#btn").on("click", render);
 
 //keypress
 $("#input-form").keypress(function (evt) {
   let keycode = evt.keycode ? evt.keycode : evt.key;
-  console.log(keycode);
   if (keycode === 13 || keycode === "Enter") {
     evt.preventDefault();
     render();
@@ -40,8 +39,29 @@ function filterDogBreedList() {
   return filteredBreeds;
 }
 
-function render() {
+async function fetchImageURL(imageId) {
+  try {
+    const imageData = await $.ajax({
+      url: `api.thedogapi.com/v1/images/${imageId}`,
+      method: "GET",
+    });
+    return imageData.url;
+  } catch (error) {
+    console.error("Error fetching image: ", error);
+  }
+}
+
+async function render() {
   const dogBreedLists = filterDogBreedList();
+
+  if (dogBreedList.length === 0) {
+    console.log("No matching breeds found");
+    return;
+  }
+
+  const imageId = dogBreedLists[0].reference_image_id;
+  const imageUrl = await fetchImageURL(imageId);
+
   //access the info from the list(s)
   $("#name").text(dogBreedLists[0].name);
   $("#bred").text(dogBreedLists[0].bred_for);
@@ -49,7 +69,7 @@ function render() {
   $("#weight").text(dogBreedLists[0].weight.metric + " kg");
   $("#height").text(dogBreedLists[0].height.metric + " cm");
   $("#temperament").text(dogBreedLists[0].temperament);
-  $("#dog-image").attr("src", dogBreedLists[0].reference_image_id + ".jpeg");
+  $("#dog-image").attr("src", imageUrl);
 }
 
 fetchMeData();
