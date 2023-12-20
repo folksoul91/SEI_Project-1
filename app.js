@@ -49,7 +49,7 @@ function render() {
   $("#weight").text(dogBreedLists[0].weight.metric + " kg");
   $("#height").text(dogBreedLists[0].height.metric + " cm");
   $("#temperament").text(dogBreedLists[0].temperament);
-  $("#dog-image").attr("src", dogBreedLists[0].reference_image_id);
+  $("#dog-image").attr("src", dogBreedLists[0].reference_image_id + ".jpg");
 }
 
 fetchMeData();
