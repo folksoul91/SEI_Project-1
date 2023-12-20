@@ -45,7 +45,6 @@ async function fetchImageURL(imageId) {
       url: `https://api.thedogapi.com/v1/images/${imageId}`,
       method: "GET",
     });
-    console.log("image data:", imageData);
     return imageData.url;
   } catch (error) {
     console.error("Error fetching image: ", error);
